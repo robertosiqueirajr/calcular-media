@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="nome">
+    <label>
+        Nome:
+        <input id="consultaNome" type="text">
+    </label> 
+    </div>
+    
+    <h1>NOTAS</h1>
+
+    <div class="alinhamentoBox">
+    <div class="notas">
+        <h3>1º Trimestre</h3>
+        <input class="digitarNota" id="primeiro" type="text">
+    </div>
+    <div class="notas">
+        <h3>2º Trimestre</h3>
+        <input class="digitarNota" id="segundo" type="text">
+    </div>
+    <div class="notas">
+        <h3>3º Trimestre</h3>
+        <input class="digitarNota" id="terceiro"type="text">
+    </div>
+    </div>
+    <button id="btnCalcular" onclick="aluno.calcular()">CALCULAR</button>
+
+    <div class="alinhamentoBox">
+    <table class="tabela" id="construcaoTabela">
+        <thead>
+            <tr>
+                 <th>Nome</th>
+                 <th>1º Trimestre</th>
+                 <th>2º Trimestre</th>
+                 <th>3º Trimestre</th>
+                 <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbody">
+            
+        </tbody>
+    </table>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
